@@ -4,6 +4,13 @@ export default defineNuxtConfig({
   modules: [
       '@vite-pwa/nuxt'
   ],
+  build: {
+    typescript: {
+      typeCheck: {
+        memoryLimit: 512
+      }
+    }
+  },
   pwa: {
     manifest: {
       name: "Рассчет зарплаты для Настюши",
